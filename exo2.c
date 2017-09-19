@@ -21,9 +21,17 @@ int main()
 	
 	
 	//Partie 2
-	
+	POINT U1, U2, I1, I2, O1, O2, P1, P2;
 	g.y=400; d.y=400;
+	U1.x=500; U2.y=400;
+	I1.x=600; I2.y=400;
+	O1.x=700; O2.y=400;
+	P1.x=800; P2.y=400;
 	draw_line(g,d,vert);
+	draw_line(U1,U2,rouge);
+	draw_line(I1,I2,bleu);
+	draw_line(O1,O2,violet);
+	draw_line(P1,P2,magenta);
 	
 	//Partie 3 (exo 2)
 	POINT bg;
@@ -47,13 +55,17 @@ int main()
 	draw_line(hd, hg, vert);
 	draw_line(hg, bg, jaune);
 	
-	POINT a,b;
+	// PArtie 5
 	
-	a.x=100; a.y= 150;
-	b.x=150; b.y= 200;
+	bg.x = 100; bg.y = 150;
+	hd.x = 150; hd.y = 200;
+	hg.x = 100; hg.y = 200;
+	bd.x = 150; bd.y = 150;
 	
-	draw_line(a,b,rouge);
-	// Exercice 3
+	draw_rectangle(bg, hd, bleu);
+	draw_line(bg, hd, orange);
+	draw_line(hg, bd, orange);
+	
 	
 	
 	
